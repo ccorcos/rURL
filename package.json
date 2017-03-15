@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "rurl": "index.js"
   },
   "keywords": [],
   "author": "Chet Corcos <ccorcos@gmail.com> (http://www.chetcorcos.com/)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^9.12.0",
+    "minimist": "^1.2.0"
+  }
 }
