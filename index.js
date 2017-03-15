@@ -4,7 +4,7 @@ const minimist = require('minimist')
 const argv = minimist(process.argv.slice(2))
 
 function help() {
-  console.log('Usage: curl <url>')
+  console.log('Usage: rurl <url>')
 }
 
 if (argv.h || argv.help) {
@@ -32,8 +32,8 @@ jsdom.env({
 	url,
   virtualConsole,
 	features: {
-    // FetchExternalResources: ["script", "frame", "iframe", "link", "img"],
-    FetchExternalResources: ["script", "frame", "iframe"],
+    FetchExternalResources: ["script", "frame", "iframe", "link", "img"],
+    // FetchExternalResources: ["script", "frame", "iframe"],
 		ProcessExternalResources: ["script"],
 		SkipExternalResources: false
 	},
